@@ -1,0 +1,12 @@
+.spacer {
+  background-color: black;
+  height: 6em;
+}
+.socials a {
+  margin: 0.5em;
+  font-size: 2em;
+}
+.socials {
+  display: flex;
+  justify-content: center;
+}
