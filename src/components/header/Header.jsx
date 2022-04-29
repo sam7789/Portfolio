@@ -1,5 +1,5 @@
 import { CTA } from "./CTA";
-import ME from "../../assets/me11.png";
+import ME from "../../assets/me12.png";
 
 import "./header.css";
 import { HeaderSocial } from "./HeaderSocial";
