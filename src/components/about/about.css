@@ -77,8 +77,8 @@
 
 .about__container p {
   margin: 2rem 0 2.6rem;
-  word-spacing: 2px;
-  letter-spacing: 1.5px;
+  /* word-spacing: 2px;
+  letter-spacing: 1.5px; */
   color: var(--color-light);
 }
 

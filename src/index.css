@@ -23,6 +23,8 @@
   --container-width-lg: 75%;
   --container-width-md: 86%;
   --container-width-sm: 90%;
+  word-spacing: 2.5px;
+  letter-spacing: 1.7px;
 }
 
 html {
