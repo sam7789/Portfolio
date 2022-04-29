@@ -1,5 +1,5 @@
 import { CTA } from "./CTA";
-// import ME from "../../assets/ME2.png";
+import ME from "../../assets/me11.png";
 
 import "./header.css";
 import { HeaderSocial } from "./HeaderSocial";
@@ -13,7 +13,9 @@ function Header() {
         <h3 className="text-light">Fullstack Developer</h3>
         <CTA />
         <HeaderSocial />
-        <div className="me">{/* <img src={ME} alt="me" /> */}</div>
+        <div className="me">
+          <img className="megif" src={ME} alt="me" />
+        </div>
         <a href="#contact" className="scroll__down">
           Scroll down
         </a>

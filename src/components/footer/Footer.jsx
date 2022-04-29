@@ -2,6 +2,7 @@ import "./footer.css";
 import { BsLinkedin } from "react-icons/bs";
 import { FaInstagramSquare } from "react-icons/fa";
 import { AiFillTwitterCircle } from "react-icons/ai";
+import { FaGithub } from "react-icons/fa";
 
 import React from "react";
 
@@ -32,9 +33,14 @@ export default function Footer() {
           >
             <AiFillTwitterCircle />
           </a>
+          <a href="https://github.com/sam7789" target="_blank" rel="noreferrer">
+            <FaGithub />
+          </a>
         </div>
       </section>
-      <div className="spacer"></div>
+      <div className="spacer">
+        <p>Made by using React.js❤️</p>
+      </div>
     </footer>
   );
 }

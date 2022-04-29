@@ -1,5 +1,5 @@
 import "./about.css";
-import Me from "../../assets/me-about.png";
+import Me from "../../assets/me-about.jpg";
 // import { FiAward } from "react-icons/fi";
 
 export const About = () => {
@@ -14,25 +14,6 @@ export const About = () => {
           </div>
         </div>
         <div className="about__content">
-          {/* <div className="about__cards">
-            <article className="about__card">
-              <FiAward />
-              <h5>Experience</h5>
-              <small>3+ Years Work</small>
-            </article>
-
-            <article className="about__card">
-              <FiAward />
-              <h5>Client</h5>
-              <small>200+ Worldwide</small>
-            </article>
-
-            <article className="about__card">
-              <FiAward />
-              <h5>Projects</h5>
-              <small>10+ projects</small>
-            </article>
-          </div> */}
           <p>
             I am a Fullstack Developer specialized in MERN Stack. I'm proficient
             in working with teams and building interactive web applications.

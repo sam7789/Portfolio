@@ -8,6 +8,7 @@ header {
   text-align: center;
   height: 100%;
   position: relative;
+  margin: auto;
 }
 
 /* ==== CTA ==== */
@@ -42,14 +43,21 @@ header {
 
 .me {
   background: linear-gradient(var(--color-primary), transparent);
+  /* background-color: transparent; */
   width: 22rem;
   height: 30rem;
   position: absolute;
   left: calc(50% - 11rem);
+  margin: auto;
   margin-top: 4rem;
   border-radius: 12rem 12rem 0 0;
   overflow: hidden;
-  padding: 0rem 1.5rem 1.5rem 1.5rem;
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+}
+
+.megif {
+  width: 100%;
+  /* height: 100%; */
 }
 
 /* ==== Scroll Down ==== */
