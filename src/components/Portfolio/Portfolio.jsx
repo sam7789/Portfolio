@@ -15,10 +15,20 @@ export const Portfolio = () => {
             <h3>{e.title}</h3>
             <p>{e.info}</p>
             <div className="portfolio__item-cta">
-              <a href={e.github} className="btn">
+              <a
+                href={e.github}
+                target="_blank"
+                rel="noreferrer"
+                className="btn"
+              >
                 Github
               </a>
-              <a href={e.demo} className="btn btn-primary">
+              <a
+                href={e.demo}
+                target="_blank"
+                rel="noreferrer"
+                className="btn btn-primary"
+              >
                 Live Demo
               </a>
             </div>
