@@ -9,6 +9,15 @@ export let projects = [
     info: "Pluralsight is a technology skills platform that provides access to thousands of expert-led video courses and more to help you develop in-demand tech skills.",
     github: "https://github.com/sam7789/pluralsight_clone",
     demo: "https://pluralsight-clone-1.netlify.app/",
+    techstack: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Node.js",
+      "MongoDB",
+      "Express.js",
+      "LocalStorage",
+    ],
   },
   {
     id: 2,
@@ -18,15 +27,17 @@ export let projects = [
     info: "Tomtop is a reliable wholesale and retail online shop that mainly deals various of articles for daily use products. Its an E- commerce website.",
     github: "https://github.com/sam7789/Tomtop",
     demo: "https://tomtopcloned.netlify.app/",
+    techstack: ["HTML", "CSS", "JavaScript", "Bootstrap", "LocalStorage"],
   },
   {
     id: 3,
     image:
       "https://www.pluralsight.com/content/dam/pluralsight/newsroom/brand-assets/logos/PS_logo_F-11.png",
     title: "PluralSight Rest API",
-    info: "Its a rest API the provides the few courses that are available on pluralsight website. This is the backend part of the pluralsight project to make the search function work.",
+    info: "Its a rest API the provides the few courses that are available on pluralsight website. This is the backend part of the pluralsight project.",
     github: "https://github.com/sam7789/pluralsightapi",
     demo: "https://pluralsightapi.herokuapp.com/course",
+    techstack: ["Node.js", "Express.js", "MongoDB"],
   },
   //   {
   //     id: 4,

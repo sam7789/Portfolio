@@ -17,7 +17,18 @@ header {
   margin-top: 2.5rem;
   display: flex;
   gap: 1.2rem;
+  flex-wrap: wrap;
   justify-content: center;
+}
+
+/* === For Waving Hand */
+
+.wave {
+  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s; /* Change to speed up or slow down */
+  animation-iteration-count: infinite; /* Never stop waving :) */
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  display: inline-block;
 }
 
 /* ==== Header Social==== */
@@ -71,6 +82,33 @@ header {
   font-size: 0.9rem;
 }
 
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(20deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-12deg);
+  }
+  30% {
+    transform: rotate(20deg);
+  }
+  40% {
+    transform: rotate(-8deg);
+  }
+  50% {
+    transform: rotate(12deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
 /* ====  Media Queries (Medium Devices) ===*/
 @media screen and (max-width: 1024px) {
   header {
@@ -86,6 +124,20 @@ header {
 
   .header__socials,
   .scroll__down {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  header {
+    height: 100vh;
+  }
+
+  .header__socials,
+  .scroll__down {
+    display: none;
+  }
+  .me {
     display: none;
   }
 }

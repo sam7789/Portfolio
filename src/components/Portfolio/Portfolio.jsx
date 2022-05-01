@@ -8,31 +8,41 @@ export const Portfolio = () => {
       <h2>Portfolio</h2>
       <div className="container portfolio__container">
         {projects.map((e) => (
-          <article className="portfolio__item" key={e.id}>
-            <div className="portfolio__item-image">
-              <img src={e.image} alt="ProjectImage" />
+          <div className="portfolio__item" key={e.id}>
+            <div className="card">
+              <div className="portfolio__item-top">
+                <img src={e.image} alt="img" />
+                <h3 className="card-title">{e.title}</h3>
+                <small>{e.info}</small>
+              </div>
+              <div className="portfolio__item-back">
+                <h5>Tech Stack Used</h5>
+                <div className="tech-stack">
+                  {e.techstack.map((e) => (
+                    <span>{e}</span>
+                  ))}
+                </div>
+              </div>
             </div>
-            <h3>{e.title}</h3>
-            <p>{e.info}</p>
             <div className="portfolio__item-cta">
               <a
                 href={e.github}
+                className="btn"
                 target="_blank"
                 rel="noreferrer"
-                className="btn"
               >
                 Github
               </a>
               <a
                 href={e.demo}
+                className="btn btn-primary"
                 target="_blank"
                 rel="noreferrer"
-                className="btn btn-primary"
               >
                 Live Demo
               </a>
             </div>
-          </article>
+          </div>
         ))}
       </div>
     </section>
