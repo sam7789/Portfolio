@@ -18,8 +18,8 @@ export const Portfolio = () => {
               <div className="portfolio__item-back">
                 <h5>Tech Stack Used</h5>
                 <div className="tech-stack">
-                  {e.techstack.map((e) => (
-                    <span>{e}</span>
+                  {e.techstack.map((e, i) => (
+                    <span key={i}>{e}</span>
                   ))}
                 </div>
               </div>
@@ -33,14 +33,16 @@ export const Portfolio = () => {
               >
                 Github
               </a>
-              <a
-                href={e.demo}
-                className="btn btn-primary"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Live Demo
-              </a>
+              {e.demo ? (
+                <a
+                  href={e.demo}
+                  className="btn btn-primary"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Live Demo
+                </a>
+              ) : null}
             </div>
           </div>
         ))}
